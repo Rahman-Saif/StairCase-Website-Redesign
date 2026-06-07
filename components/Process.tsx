@@ -58,7 +58,7 @@ export default function Process() {
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
+            transition={{ duration: 0.65, ease: "easeOut" as const, delay: i * 0.1 }}
             className="flex-1 px-8 text-center"
           >
             {/* Dot */}

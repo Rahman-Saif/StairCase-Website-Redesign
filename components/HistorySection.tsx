@@ -13,7 +13,7 @@ const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 32 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-80px" },
-  transition: { duration: 0.75, ease: [0.22, 1, 0.36, 1], delay },
+  transition: { duration: 0.75, ease: "easeOut" as const, delay },
 });
 
 export default function HistorySection() {
@@ -88,7 +88,7 @@ export default function HistorySection() {
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
+          transition={{ duration: 0.9, ease: "easeOut" as const, delay: 0.15 }}
           className="relative"
         >
           {/* Decorative offset frame */}

@@ -50,7 +50,7 @@ export default function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+          transition={{ duration: 0.7, ease: "easeOut" as const, delay: 0.1 }}
           className="text-[10px] font-medium tracking-[0.32em] uppercase text-[#D4AF37] mb-5"
         >
           Our Services
@@ -59,7 +59,7 @@ export default function HeroSection() {
         <motion.h1
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+          transition={{ duration: 0.9, ease: "easeOut" as const, delay: 0.25 }}
           className="text-[clamp(40px,5.5vw,72px)] font-light leading-[1.06] tracking-[-0.025em] text-white mb-6"
         >
           We Design Spaces
@@ -70,7 +70,7 @@ export default function HeroSection() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeOut" as const, delay: 0.4 }}
           className="text-[15px] font-light leading-[1.8] text-white/50 mb-10 max-w-[420px]"
         >
           From concept to installation — every staircase is engineered for

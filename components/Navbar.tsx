@@ -24,7 +24,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ opacity: 0, y: -16 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.7, ease: "easeOut" as const }}
       className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-12 h-[72px] transition-all duration-500 border-b
         ${scrolled
           ? "bg-[rgba(10,10,10,0.88)] border-[rgba(212,175,55,0.2)] backdrop-blur-2xl"
@@ -76,11 +76,11 @@ export default function Navbar() {
         >
           {links.map((link) => (
             <a
-              key={link}
+              key={link.href}
               href="#"
               className="text-[12px] tracking-[0.15em] uppercase text-white/60 hover:text-white transition-colors no-underline"
             >
-              {link}
+              {link.name}
             </a>
           ))}
           <button className="w-full text-[11px] font-medium tracking-[0.14em] uppercase px-6 py-3 border border-[rgba(212,175,55,0.55)] text-[#D4AF37] rounded-sm mt-2">

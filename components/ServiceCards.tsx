@@ -84,7 +84,7 @@ export default function ServiceCards() {
               initial={{ opacity: 0, y: 28 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: i * 0.08 }}
+              transition={{ duration: 0.7, ease: "easeOut" as const, delay: i * 0.08 }}
               whileHover={{ y: -5, transition: { duration: 0.3 } }}
               className={`relative rounded-2xl p-8 cursor-default transition-shadow duration-300
                 ${card.highlight

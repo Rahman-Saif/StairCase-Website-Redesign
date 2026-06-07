@@ -38,7 +38,7 @@ export default function TeamCard({
         opacity: isActive ? 1 : 0.72,
       }}
       transition={{
-        flex: { duration: 0.45, ease: [0.22, 1, 0.36, 1] },
+        flex: { duration: 0.45, ease: "easeOut" as const },
         opacity: { duration: 0.3 },
       }}
       className="relative overflow-hidden rounded-2xl cursor-pointer min-w-0 shrink-0"
@@ -74,7 +74,7 @@ export default function TeamCard({
             y: isActive ? 0 : 6,
             opacity: isActive ? 1 : 0.5,
           }}
-          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.35, ease: "easeOut" as const }}
         >
           {/* Designation chip */}
           <motion.p

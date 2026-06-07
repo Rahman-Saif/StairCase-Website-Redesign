@@ -82,7 +82,7 @@ export default function StackedImageGallery() {
                 scale: offset.scale,
                 zIndex: stack.length - idx,
               }}
-              transition={{ duration: 0.48, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.48, ease: "easeOut" as const }}
               className="absolute inset-0 rounded-2xl overflow-hidden cursor-pointer select-none"
               style={{
                 boxShadow: isTop

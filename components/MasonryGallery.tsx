@@ -122,7 +122,7 @@ export default function MasonryGallery() {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: (i % 4) * 0.07 }}
+              transition={{ duration: 0.65, ease: "easeOut" as const, delay: (i % 4) * 0.07 }}
               className={`relative overflow-hidden rounded-2xl cursor-pointer group ${aspectClasses[item.aspect]}`}
               onClick={() => open(item.id)}
             >
@@ -189,7 +189,7 @@ export default function MasonryGallery() {
               initial={{ opacity: 0, scale: 0.92, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.4, ease: "easeOut" as const }}
               className="relative w-full max-w-2xl rounded-2xl overflow-hidden"
               style={{ aspectRatio: "16/10" }}
               onClick={(e) => e.stopPropagation()}
