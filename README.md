@@ -7,8 +7,7 @@ This project focuses on transforming a traditional business website into a **pre
 
 ## ✨ Live Demo
 
-🔗 Live Website: [https://your-live-link.com](https://your-live-link.com)  
-🔗 GitHub Repo: [https://github.com/your-username/your-repo](https://github.com/your-username/your-repo)
+🔗 Live Website: [https://stair-case-website-redesign.vercel.app/)  
 
 ---
 
